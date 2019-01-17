@@ -318,38 +318,45 @@ collection-layout-default homepage mobile-style-available site-title">
                                 </div>
                                     <div id="guests-form" style="display: none;">
                                         <div class="field-list clear">
-                                            <fieldset id="name" class="form-item fields name required">
-                                                <div class="title">Plus One: <span class="required">*</span></div>
-                                                <legend>Name</legend>
-                                            
-                                                <div class="field first-name">
-                                                    <label class="caption"><input class="field-element field-control" name="fname" x-autocompletetype="given-name"
-                                                            type="text" spellcheck="false" maxlength="30" data-title="First" />
-                                                        First Name</label>
-                                                </div>
-                                                <div class="field last-name">
-                                                    <label class="caption"><input class="field-element field-control" name="lname" x-autocompletetype="surname"
-                                                            type="text" spellcheck="false" maxlength="30" data-title="Last" />
-                                                        Last Name</label>
-                                                </div>
-                                            </fieldset>
-                                            <div class="form-item field text required">
-                                                <label class="title" for="text-yui_3_17_2_1_1406913102698_182522-field">Entree: <span class="required">*</span></label>
-                                                <select class="field-element text" id="guests-select" style="font-family: Montserrat; height: 40px;">
-                                                    <option value="">--Please choose an option--</option>
-                                                    <option value="Beef">Beef</option>
-                                                    <option value="Chicken">Chicken</option>
-                                                    <option value="Vegetarian">Vegetarian</option>
-                                                    <option value="Kids Meal">Kids Meal</option>
-                                                </select>
-                                                <!-- <input class="field-element text" type="text" id="text-yui_3_17_2_1_1406913102698_182522-field" /> -->
+                                            <div  class="form-button-wrapper form-button-wrapper--align-left">
+                                                <input id="back-btn" class="button sqs-system-button sqs-editable-button" type="button" style="font-size: 20px; padding: 10px 20px !important; background: grey;" value="<" />
                                             </div>
-                                            <div class="form-item field text">
-                                                <label class="title" for="textarea-yui_3_17_2_1_1406913102698_182929-field">Please note any special dietary
-                                                    requirements:</label>
-                                                <input type="text" class="field-element " id="textarea-yui_3_17_2_1_1406913102698_182929-field" />
+                                            <br>
+                                            <div id="plus-one">          
+                                                <fieldset id="name" class="form-item fields name required">
+                                                    <div class="title">Plus One: <span class="required">*</span></div>
+                                                    <legend>Name</legend>
+                                                
+                                                    <div class="field first-name">
+                                                        <label class="caption"><input class="field-element field-control" name="fname" x-autocompletetype="given-name"
+                                                                type="text" spellcheck="false" maxlength="30" data-title="First" />
+                                                            First Name</label>
+                                                    </div>
+                                                    <div class="field last-name">
+                                                        <label class="caption"><input class="field-element field-control" name="lname" x-autocompletetype="surname"
+                                                                type="text" spellcheck="false" maxlength="30" data-title="Last" />
+                                                            Last Name</label>
+                                                    </div>
+                                                </fieldset>
+                                                <div class="form-item field text required">
+                                                    <label class="title" for="text-yui_3_17_2_1_1406913102698_182522-field">Entree: <span class="required">*</span></label>
+                                                    <select class="field-element text" id="guests-select" style="font-family: Montserrat; height: 40px;">
+                                                        <option value="">--Please choose an option--</option>
+                                                        <option value="Beef">Beef</option>
+                                                        <option value="Chicken">Chicken</option>
+                                                        <option value="Vegetarian">Vegetarian</option>
+                                                        <option value="Kids Meal">Kids Meal</option>
+                                                    </select>
+                                                    <!-- <input class="field-element text" type="text" id="text-yui_3_17_2_1_1406913102698_182522-field" /> -->
+                                                </div>
+                                                <div class="form-item field text">
+                                                    <label class="title" for="textarea-yui_3_17_2_1_1406913102698_182929-field">Please note any special dietary
+                                                        requirements:</label>
+                                                    <input type="text" class="field-element " id="textarea-yui_3_17_2_1_1406913102698_182929-field" />
+                                                </div>
                                             </div>
-                                        <input class="button" id="back-btn" value="<<" />
+                                        
+                                        
                                         </div>
                                         
                                             
