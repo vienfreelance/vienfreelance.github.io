@@ -440,6 +440,7 @@ collection-layout-default homepage mobile-style-available site-title">
                                     </div>
                                     
                                     <div class="form-button-wrapper form-button-wrapper--align-center">
+                                        <p>Please contact Melissa or Michael if you have any questions.</p>
                                         <input class="button sqs-system-button sqs-editable-button" type="submit" value="RSVP" />
                                     </div>
 
@@ -451,14 +452,14 @@ collection-layout-default homepage mobile-style-available site-title">
                             </div>
 
                         </div>
-                        <!-- <div class="sqs-block spacer-block sqs-block-spacer" data-aspect-ratio="5.057471264367816"
+                        <div class="sqs-block spacer-block sqs-block-spacer" data-aspect-ratio="5.057471264367816"
                             data-block-type="21" id="block-yui_3_17_2_1_1407273714484_50771">
                             <div class="sqs-block-content">&nbsp;</div>
                         </div>
                        
                         <div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-yui_3_17_2_1_1407277285300_27898">
                             <div class="sqs-block-content">&nbsp;</div>
-                        </div> -->
+                        </div>
                     </div>
                     <div class="col sqs-col-2 span-2">
                         <div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21">
@@ -497,17 +498,45 @@ collection-layout-default homepage mobile-style-available site-title">
         $("#guests-select").change(function(){ 
             guests = $("#guests-select").val()
             console.log(guests)
-            $("#main-form").toggle("slide");
-            $("#guests-form").toggle("slide");
-            if (guests == "2") {
-                $("#plus-two").toggle("slide");
+            if(guests != "") {
+                $("#main-form").toggle("slide");
+                $("#guests-form").toggle("slide");
+                if (guests == "1") {
+                    $("#plus-one").show()
+                    $("#plus-two").hide()
+                    $("#plus-three").hide() 
+                    $("#plus-four").hide()
+                    $("#plus-five").hide()
+                }
+                else if (guests == "2") {
+                    $("#plus-one").show()
+                    $("#plus-two").show()
+                    $("#plus-three").hide()
+                    $("#plus-four").hide()
+                    $("#plus-five").hide()
+                }
+                else if (guests == "3") {
+                    $("#plus-one").show()
+                    $("#plus-two").show()
+                    $("#plus-three").show()
+                    $("#plus-four").hide()
+                    $("#plus-five").hide()
+                }
+                else if (guests == "4") {
+                    $("#plus-one").show()
+                    $("#plus-two").show()
+                    $("#plus-three").show()
+                    $("#plus-four").show()
+                    $("#plus-five").hide()
+                }
+                else if (guests == "5") {
+                    $("#plus-one").show()
+                    $("#plus-two").show()
+                    $("#plus-three").show()
+                    $("#plus-four").show()
+                    $("#plus-five").show()
+                }
             }
-            else if (guests == "3") {
-                $("#plus-two").toggle("slide");
-                $("#plus-three").toggle("slide");
-                console.log("33333")
-            }
-            
 
             
         })
