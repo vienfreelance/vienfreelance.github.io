@@ -1,0 +1,307 @@
+@font-face {
+font-family: Bebas Neue;
+src: url("bebas-neue/BebasNeue Light.otf") format("opentype");
+}
+body {
+  background: black;
+  color: white;
+  font-family: Quicksand;
+  text-align: center;
+}
+img {
+  margin-top: 10px;
+}
+img:hover {
+  opacity: .5;
+}
+/*.easter-egg {
+  background: url('https://images.unsplash.com/photo-1459111701074-c0ee7842cccb?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=b4ff177cd41143657a99f4cacfb8a9fe');
+  background-size: cover;
+  background-repeat: none;
+}*/
+.hidden {
+  display: none !important;
+}
+#sleeping-boy {
+  width: 20%;
+  transform: rotate(-300deg);
+}
+
+#sleeping-boy:hover {
+  opacity: .8 !important;
+}
+#credit {
+  color: #F4C0B3;
+}
+
+#credit:hover {
+  color: #96D7C4;
+}
+#sleeping-boy:hover {
+  opacity: 1;
+}
+
+#fact {
+  margin-top: -75px;
+}
+.fa-github {
+  font-size: 50px;
+  color: #96D7C4;
+}
+.fa-github:hover {
+  color: #F4C0B3;
+}
+img#perseus-img {
+  width: 50% !important;
+}
+
+img#dreamcatcher-img {
+  width: 50% !important;
+  float: right;
+}
+
+img#vanhouston-img {
+  width: 50% !important;
+}
+.technologies {
+  /*padding-top: 5%;*/
+  width: 50% !important;
+  /*text-align: center;*/
+  padding: 10px;
+}
+
+.float-right {
+  float: right;
+}
+
+img#text-twist-img {
+  width: 50% !important;
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+.header {
+  position: relative;
+  height: 800px;
+  width: 100%;
+  padding-top: 50px;
+  /*text-align: justify;*/
+  padding-right: 10px;
+}
+
+#design {
+  letter-spacing: 12.5px;
+  margin-left: 8px !important;
+}
+
+.technologies p {
+  /*font-weight: bolder;*/
+  font-size: 20px;
+  /*color: black;*/
+}
+.awesome-guy {
+  font-size: 12em;
+  border-bottom: 1px solid white;
+}
+
+.title {
+  font-size: 3em;
+  letter-spacing: 2px;
+}
+.row {
+  border-top: 1px dashed white;
+}
+.card {
+  background: transparent !important;
+  border-bottom: 1px solid white;
+  padding: 30px;
+  margin: 5px !important;
+  box-shadow: none !important;
+}
+
+#perseus {
+  /*background: #F4B31F;*/
+  /*background: transparent;*/
+  padding: 30px;
+}
+
+#vanhouston {
+  /*background: #FBDC93;*/
+  padding: 30px;
+}
+
+#text-twist {
+  /*background: #219581;*/
+    padding: 30px;
+}
+
+#dreamcatcher {
+  /*background: #96D7C4;*/
+    padding: 30px;
+}
+
+a#github {
+  background: #F4B31F;
+}
+
+a#twitter {
+  background: #96D7C4;
+}
+
+a#instagram {
+  background: #219581;
+}
+
+a#mail {
+  background: #FBDC93;
+}
+
+.btn-floating:hover {
+  background: grey !important;
+}
+
+.raptor {
+  color: #96D7C4;
+}
+.raptor:hover {
+  color: #F4C0B3;
+}
+
+.developer {
+  color: #F4B31F;
+}
+
+.col:hover {
+  box-shadow: inset 4px 4px 50px black !important;
+}
+
+
+.bounce {
+  position:relative;
+  font-size: 150px;
+  color: #96D7C4;
+  -webkit-animation:bounce 1s infinite;
+}
+.bounce:hover {
+  color: #F4C0B3;
+  cursor: pointer;
+}
+@-webkit-keyframes bounce {
+  0%       { bottom:5px; }
+  25%, 75% { bottom:20px; }
+  50%      { bottom:25px; }
+  100%     {bottom:0;}
+}
+
+@media (max-width: 1000px) {
+
+  .header {
+    padding-top: 200px;
+  }
+  img#perseus-img {
+    width: 100% !important;
+  }
+
+  img#dreamcatcher-img {
+    width: 100% !important;
+  }
+
+  img#vanhouston-img {
+    width: 100% !important;
+  }
+
+  img#text-twist-img {
+    width: 100% !important;
+  }
+  .awesome-guy {
+    font-size: 6em;
+  }
+  .title {
+    font-size: 3em;
+  }
+  .technologies {
+    width: 100% !important;
+    text-align: center;
+  }
+  .float-left {
+    float: none;
+  }
+  .float-right {
+    float: none;
+  }
+}
+
+@media all
+    and (min-device-width: 320px)
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) {
+      .awesome-guy {
+        font-size: 4em;
+      }
+      .title {
+        font-size: 1em;
+      }
+      #design {
+        font-size: 1em;
+        letter-spacing: 3.5px;
+      }
+      #projects {
+        font-size: 1em;
+      }
+      .bounce {
+        padding-top: 100px;
+        font-size: 3em;
+      }
+      img#perseus-img {
+        width: 100% !important;
+      }
+
+      img#dreamcatcher-img {
+        width: 100% !important
+      }
+
+      img#vanhouston-img {
+        width: 100% !important;
+      }
+
+      img#text-twist-img {
+        width: 100% !important;
+      }
+
+      .technologies {
+        width: 100% !important;
+        text-align: center;
+      }
+      .float-left {
+        float: none;
+      }
+      .float-right {
+        float: none;
+      }
+      .nav {
+        position: fixed !important;
+        top: 10px;
+        right: 20px;
+      }
+      p {
+        font-size: 1em !important;
+      }
+      #fact {
+        font-size: 1em !important;
+      }
+      .header {
+        padding-top: 175px;
+      }
+      .mobile-nav > a {
+        box-shadow: 0 0 40px black;
+      }
+      #sleeping-boy {
+        width: 20%;
+        margin-top: -50px;
+        margin-left: 100px;
+        margin-bottom: 40px;
+      }
+    }
