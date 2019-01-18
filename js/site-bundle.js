@@ -1,18 +1,21 @@
 $(document).ready(function () {
     $firstName = $("input[name=First_Name]");
+    // $firstName.focus()
     $lastName = $("input[name=Last_Name]");
-    if ($firstName.val() == "" || $lastName.val() == "") {
-        $firstName.blur(function (event) {
-            event.target.checkValidity();
-        }).bind('invalid', function (event) {
-            setTimeout(function () { $(event.target).focus(); }, 50);
-        });
-        $lastName.blur(function (event) {
-            event.target.checkValidity();
-        }).bind('invalid', function (event) {
-            setTimeout(function () { $(event.target).focus(); }, 50);
-        });
-    }
+    
+    //     // $firstName.blur(function (event) {
+    //     //     event.target.checkValidity();
+    //     // }).bind('invalid', function (event) {
+    //     //     setTimeout(function () { $(event.target).focus(
+                
+    //     //     ); }, 50);
+    //     // });
+    //     $lastName.blur(function (event) {
+    //         event.target.checkValidity();
+    //     }).bind('invalid', function (event) {
+    //         setTimeout(function () { $(event.target).focus(); }, 50);
+    //     });
+    
     console.log("ready!");
 });
 
@@ -22,62 +25,70 @@ $("#mobileMenuLink a").on("click", function (e) {
 })    
 
 $("#guests-select").change(function () {
-    
-    guests = $("#guests-select").val()
-    console.log(guests)
-    if (guests != "" && guests != "0") {
-        
-        $("#main-form").toggle("slide");
-        $("#guests-form").toggle("slide");
-        if (guests == "1") {
-            $("#plus-one").show()
-            $("#plus-two").hide()
-            $("#plus-three").hide()
-            $("#plus-four").hide()
+    if ($firstName.val() == "") {
+        $firstName.focus()
+        guests = $("#guests-select").val("")
+    } else if ($lastName.val() == "") {
+        $lastName.focus()
+        guests = $("#guests-select").val("")
+    } else {
+        // guests = $("#guests-select").val("")
+        guests = $("#guests-select").val()
+        console.log(guests)
+        if (guests != "" && guests != "0") {
             
-            makeRequired("Plus_one")
+            $("#main-form").toggle("slide");
+            $("#guests-form").toggle("slide");
+            if (guests == "1") {
+                $("#plus-one").show()
+                $("#plus-two").hide()
+                $("#plus-three").hide()
+                $("#plus-four").hide()
+                
+                makeRequired("Plus_one")
+                makeNotRequired("Plus_two")
+                makeNotRequired("Plus_three")
+                makeNotRequired("Plus_four")
+                
+            }
+            else if (guests == "2") {
+                $("#plus-one").show()
+                $("#plus-two").show()
+                $("#plus-three").hide()
+                $("#plus-four").hide()
+                makeRequired("Plus_one")
+                makeRequired("Plus_two")
+                makeNotRequired("Plus_three")
+                makeNotRequired("Plus_four")
+            }
+            else if (guests == "3") {
+                $("#plus-one").show()
+                $("#plus-two").show()
+                $("#plus-three").show()
+                $("#plus-four").hide()
+                
+                makeRequired("Plus_one")
+                makeRequired("Plus_two")
+                makeRequired("Plus_three")
+                makeNotRequired("Plus_four")
+            }
+            else if (guests == "4") {
+                $("#plus-one").show()
+                $("#plus-two").show()
+                $("#plus-three").show()
+                $("#plus-four").show()
+                makeRequired("Plus_one")
+                makeRequired("Plus_two")
+                makeRequired("Plus_three")
+                makeRequired("Plus_four")
+            }
+        } else {
+            console.log("nothing happened");
+            makeNotRequired("Plus_one")
             makeNotRequired("Plus_two")
             makeNotRequired("Plus_three")
             makeNotRequired("Plus_four")
-            
         }
-        else if (guests == "2") {
-            $("#plus-one").show()
-            $("#plus-two").show()
-            $("#plus-three").hide()
-            $("#plus-four").hide()
-            makeRequired("Plus_one")
-            makeRequired("Plus_two")
-            makeNotRequired("Plus_three")
-            makeNotRequired("Plus_four")
-        }
-        else if (guests == "3") {
-            $("#plus-one").show()
-            $("#plus-two").show()
-            $("#plus-three").show()
-            $("#plus-four").hide()
-            
-            makeRequired("Plus_one")
-            makeRequired("Plus_two")
-            makeRequired("Plus_three")
-            makeNotRequired("Plus_four")
-        }
-        else if (guests == "4") {
-            $("#plus-one").show()
-            $("#plus-two").show()
-            $("#plus-three").show()
-            $("#plus-four").show()
-            makeRequired("Plus_one")
-            makeRequired("Plus_two")
-            makeRequired("Plus_three")
-            makeRequired("Plus_four")
-        }
-    } else {
-        console.log("nothing happened");
-        makeNotRequired("Plus_one")
-        makeNotRequired("Plus_two")
-        makeNotRequired("Plus_three")
-        makeNotRequired("Plus_four")
     }
 
 
