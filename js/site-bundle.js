@@ -113,6 +113,7 @@ $('#rsvp-form').on('submit', function(e) {
   }).success(function(data) {
       $("#thankyou").toggle("fade")
       $("#form-block").hide();
+      $("#rsvp-caption").hide();
   }
 
     
