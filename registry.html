@@ -44,6 +44,9 @@
     -webkit-appearance: none;
     -webkit-border-radius: 0px;
     }
+    .registry-list {
+        
+    }
 .form-wrapper .field-list {
     padding: 10px;
 }
@@ -178,8 +181,26 @@ collection-layout-default homepage mobile-style-available site-title">
                     <div class="col sqs-col-8 span-8">
                         <div class="sqs-block html-block sqs-block-html" data-block-type="2">
                             <div class="sqs-block-content">
-                                <h3 class="text-align-center">We look forward to celebrating with you!</h3>
-                                <h3 class="text-align-center">Please RSVP by March 11th, 2019</h3>
+                                <h3 class="text-align-center">We consider your presence to be the greatest gift to us, but if you would like to give us
+                                    a tangible gift, we are registered at the places below:</h3>
+                                    <div id="topNav">
+
+                                    
+<nav class="main-nav" data-content-field="navigation">
+                                <ul>
+                                    <li class="page-collection registry-list">
+<a href="https://www.amazon.com/wedding/share/michaelandmelissawedding" style="color: #ff9597 !important;">Amazon</a>
+                                    </li>
+<li class="page-collection registry-list">
+<a href="http://tgt.gifts/michaelandmelissawedding" style="color: #ff9597 !important;">Target</a>
+                                    </li>
+<li class="page-collection registry-list">
+<a href="https://www.crateandbarrel.com/gift-registry/melissa-melcher-and-michael-lam/r5923728" style="color: #ff9597 !important;">Crate&Barrel</a>
+                                    </li>
+                                </ul>
+                                </nav>
+</div>
+                                    
                             </div>
                         </div>
                         <div class="sqs-block horizontalrule-block sqs-block-horizontalrule" data-block-type="47">
@@ -189,269 +210,6 @@ collection-layout-default homepage mobile-style-available site-title">
                         </div>
 
 
-                        <div class="form-wrapper" id="form-block">
-
-                            <div class="form-inner-wrapper">
-                                <form autocomplete="on" id="rsvp-form" action="">
-                                    <div id="main-form">
-                                        <div class="field-list clear">
-
-                                            <fieldset id="name" class="form-item fields name required" required>
-                                                <div class="title">Name <span class="required">*</span></div>
-                                                <legend>Name</legend>
-
-                                                <div class="field first-name">
-                                                    <label class="caption"><input class="field-element field-control"
-                                                            name="First_Name" x-autocompletetype="given-name" type="text"
-                                                            spellcheck="false" maxlength="30" data-title="First"
-                                                            required />
-                                                        First Name</label>
-                                                </div>
-                                                <div class="field last-name">
-                                                    <label class="caption"><input class="field-element field-control"
-                                                            name="Last_Name" x-autocompletetype="surname" type="text"
-                                                            spellcheck="false" maxlength="30" data-title="Last"
-                                                            required />
-                                                        Last Name</label>
-                                                </div>
-                                            </fieldset>
-                                            <!-- attending or not  -->
-                                            <div class="form-item field text required">
-                                                <p class="radio-title">
-                                                    <label class="title">Are you attending? <span class="required">*</span></label>
-                                                </p>
-
-                                                <div class="field first-name">
-                                                    <p class="radio-options">
-                                                        <label class="caption">
-                                                            <input name="Attending" type="radio" value="yes" checked />
-                                                            <span>Yes, I will attend</span>
-                                                        </label>
-                                                    </p>
-                                                </div>
-                                                <div class="field last-name">
-                                                    <p class="radio-options">
-                                                        <label class="caption">
-                                                            <input name="attending" type="radio" value="no" />
-                                                            <span>No, I must regretfully decline</span>
-                                                        </label>
-                                                    </p>
-                                                </div>
-
-                                            </div>
-                                            <!-- food choices  -->
-                                            <div class="form-item field text required">
-                                                <p class="radio-title">
-                                                    <label class="title">Please indicate your entree selection: <span
-                                                            class="required">*</span></label>
-                                                </p>
-
-                                                <p class="radio-options">
-                                                    <label class="caption">
-                                                        <input class="field-control" name="Entree" type="radio" value="Beef"
-                                                            checked />
-                                                        <span>Beef</span>
-                                                    </label>
-                                                </p>
-                                                <p class="radio-options">
-                                                    <label class="caption">
-                                                        <input class="field-control" name="Entree" value="Chicken" type="radio" />
-                                                        <span>Chicken</span>
-                                                    </label>
-                                                </p>
-                                                <p class="radio-options">
-                                                    <label class="caption">
-                                                        <input class="field-control" name="Entree" type="radio" value="Vegetarian"
-                                                            checked />
-                                                        <span>Vegetarian</span>
-                                                    </label>
-                                                </p>
-                                                <p class="radio-options">
-                                                    <label class="caption">
-                                                        <input class="field-control" name="Entree" value="Kids Meal"
-                                                            type="radio" />
-                                                        <span>Kids Meal (chicken tenders, fries, fruit)</span>
-                                                    </label>
-                                                </p>
-                                            </div>
-                                            <!-- allergies  -->
-                                            <div class="form-item field text">
-                                                <label class="title" for="textarea-yui_3_17_2_1_1406913102698_182929-field">Please
-                                                    note any special dietary
-                                                    requirements:</label>
-
-                                                <input type="text" class="field-element" name="Diet" id="textarea-yui_3_17_2_1_1406913102698_182929-field" />
-                                            </div>
-
-                                            <!-- + 1 -->
-                                            <div class="form-item field text required">
-                                                <label class="title" for="text-yui_3_17_2_1_1406913102698_182522-field">How
-                                                    many other guests are accompanying you?</label>
-                                                <select class="field-element text" id="guests-select" style="font-family: Montserrat; height: 40px;"
-                                                    required>
-                                                    <option value="">--Please choose an option--</option>
-                                                    <option value="0">0</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                </select>
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div id="guests-form" style="display: none;">
-                                        <div class="field-list clear">
-                                            <div class="form-button-wrapper form-button-wrapper--align-left">
-                                                <input id="back-btn" class="button sqs-system-button sqs-editable-button"
-                                                    type="button" style="font-size: 20px; padding: 10px 20px !important; background: grey;"
-                                                    value="<" />
-                                            </div>
-                                            <br>
-                                            <div id="plus-one">
-                                                <div class="form-item field text">
-                                                    <div class="title"><strong>First Guest: <span class="required">*</span></strong></div>
-                                                    <input type="text" class="field-element " placeholder="Name" id="textarea-yui_3_17_2_1_1406913102698_182929-field"
-                                                        name="Plus_one_name" />
-                                                </div>
-                                                <div class="form-item field text required">
-                                                    <label class="title" for="text-yui_3_17_2_1_1406913102698_182522-field">Entree:
-                                                        <span class="required">*</span></label>
-                                                    <select class="field-element text" id="guests-select" name="Plus_one_entree"
-                                                        style="font-family: Montserrat; height: 40px;">
-                                                        <option value="">--Please choose an option--</option>
-                                                        <option value="Beef">Beef</option>
-                                                        <option value="Chicken">Chicken</option>
-                                                        <option value="Vegetarian">Vegetarian</option>
-                                                        <option value="Kids Meal">Kids Meal</option>
-                                                    </select>
-
-                                                </div>
-                                                <div class="form-item field text">
-                                                    <label class="title" for="textarea-yui_3_17_2_1_1406913102698_182929-field">Please
-                                                        note any special dietary
-                                                        requirements:</label>
-                                                    <input type="text" class="field-element" id="textarea-yui_3_17_2_1_1406913102698_182929-field"
-                                                        name="Plus_one_diet" />
-                                                </div>
-
-                                            </div>
-
-                                            <div id="plus-two" style="display: none;">
-                                                <hr>
-                                                <div class="form-item field text">
-                                                    <div class="title"><strong>Second Guest: <span class="required">*</span></strong></div>
-                                                    <input type="text" class="field-element" placeholder="Name" name="Plus_two_name" />
-                                                </div>
-                                                <div class="form-item field text required">
-                                                    <label class="title" for="text-yui_3_17_2_1_1406913102698_182522-field">Entree:
-                                                        <span class="required">*</span></label>
-                                                    <select class="field-element text" name="Plus_two_entree" id="guests-select"
-                                                        style="font-family: Montserrat; height: 40px;">
-                                                        <option value="">--Please choose an option--</option>
-                                                        <option value="Beef">Beef</option>
-                                                        <option value="Chicken">Chicken</option>
-                                                        <option value="Vegetarian">Vegetarian</option>
-                                                        <option value="Kids Meal">Kids Meal</option>
-                                                    </select>
-                                                    <!-- <input class="field-element text" type="text" id="text-yui_3_17_2_1_1406913102698_182522-field" /> -->
-                                                </div>
-                                                <div class="form-item field text">
-                                                    <label class="title" for="textarea-yui_3_17_2_1_1406913102698_182929-field">Please
-                                                        note any special dietary
-                                                        requirements:</label>
-                                                    <input type="text" class="field-element " name="Plus_two_diet" id="textarea-yui_3_17_2_1_1406913102698_182929-field" />
-                                                </div>
-
-                                            </div>
-
-                                            <div id="plus-three" style="display: none;">
-                                                <hr>
-                                                <div class="form-item field text">
-                                                    <div class="title"><strong>Third Guest: <span class="required">*</span></strong></div>
-                                                    <input type="text" class="field-element " placeholder="Name" id="textarea-yui_3_17_2_1_1406913102698_182929-field"
-                                                        name="Plus_three_name" />
-                                                </div>
-                                                <div class="form-item field text required">
-                                                    <label class="title" for="text-yui_3_17_2_1_1406913102698_182522-field">Entree:
-                                                        <span class="required">*</span></label>
-                                                    <select class="field-element text" id="guests-select" name="Plus_three_entree"
-                                                        style="font-family: Montserrat; height: 40px;">
-                                                        <option value="">--Please choose an option--</option>
-                                                        <option value="Beef">Beef</option>
-                                                        <option value="Chicken">Chicken</option>
-                                                        <option value="Vegetarian">Vegetarian</option>
-                                                        <option value="Kids Meal">Kids Meal</option>
-                                                    </select>
-                                                    <!-- <input class="field-element text" type="text" id="text-yui_3_17_2_1_1406913102698_182522-field" /> -->
-                                                </div>
-                                                <div class="form-item field text">
-                                                    <label class="title" for="textarea-yui_3_17_2_1_1406913102698_182929-field">Please
-                                                        note any special dietary
-                                                        requirements:</label>
-                                                    <input type="text" class="field-element" name="Plus_three_diet" id="textarea-yui_3_17_2_1_1406913102698_182929-field" />
-                                                </div>
-
-                                            </div>
-                                            <div id="plus-four" style="display: none;">
-                                                <hr>
-                                                <div class="form-item field text">
-                                                    <div class="title"><strong>Fourth Guest: <span class="required">*</span></strong></div>
-                                                    <input type="text" class="field-element " placeholder="Name" id="textarea-yui_3_17_2_1_1406913102698_182929-field"
-                                                        name="Plus_four_name" />
-                                                </div>
-                                                <div class="form-item field text required">
-                                                    <label class="title" for="text-yui_3_17_2_1_1406913102698_182522-field">Entree:
-                                                        <span class="required">*</span></label>
-                                                    <select class="field-element text" id="guests-select" name="Plus_four_entree"
-                                                        style="font-family: Montserrat; height: 40px;">
-                                                        <option value="">--Please choose an option--</option>
-                                                        <option value="Beef">Beef</option>
-                                                        <option value="Chicken">Chicken</option>
-                                                        <option value="Vegetarian">Vegetarian</option>
-                                                        <option value="Kids Meal">Kids Meal</option>
-                                                    </select>
-                                                    <!-- <input class="field-element text" type="text" id="text-yui_3_17_2_1_1406913102698_182522-field" /> -->
-                                                </div>
-                                                <div class="form-item field text">
-                                                    <label class="title" for="textarea-yui_3_17_2_1_1406913102698_182929-field">Please
-                                                        note any special dietary
-                                                        requirements:</label>
-                                                    <input type="text" class="field-element" name="Plus_four_diet" id="textarea-yui_3_17_2_1_1406913102698_182929-field" />
-                                                </div>
-
-                                            </div>
-
-
-                                        </div>
-
-
-                                    </div>
-
-                                    <div class="form-button-wrapper form-button-wrapper--align-center">
-                                        <p>Please contact Melissa or Michael if you have any questions.</p>
-                                        <input class="button sqs-system-button sqs-editable-button" type="submit" id="submit-form"
-                                            value="RSVP" />
-                                    </div>
-
-                                    <div class="hidden form-submission-text">Thank you!</div>
-
-                                    <div class="hidden form-submission-html" data-submission-html=""></div>
-                                </form>
-
-                            </div>
-
-                        </div>
-                        <div id="thankyou" style="display: none;">
-                            <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1407273714484_50873">
-                                <div class="sqs-block-content">
-                                    <h2 class="text-align-center">
-                                        Suck a nut!
-                                    </h2>
-                                </div>
-                            </div>
-                        </div>
                         <div class="sqs-block spacer-block sqs-block-spacer" data-aspect-ratio="5.057471264367816"
                             data-block-type="21" id="block-yui_3_17_2_1_1407273714484_50771">
                             <div class="sqs-block-content">&nbsp;</div>
