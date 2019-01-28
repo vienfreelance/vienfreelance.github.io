@@ -2,20 +2,13 @@ $(document).ready(function () {
     $firstName = $("input[name=First_Name]");
     // $firstName.focus()
     $lastName = $("input[name=Last_Name]");
-    
-    //     // $firstName.blur(function (event) {
-    //     //     event.target.checkValidity();
-    //     // }).bind('invalid', function (event) {
-    //     //     setTimeout(function () { $(event.target).focus(
-                
-    //     //     ); }, 50);
-    //     // });
-    //     $lastName.blur(function (event) {
-    //         event.target.checkValidity();
-    //     }).bind('invalid', function (event) {
-    //         setTimeout(function () { $(event.target).focus(); }, 50);
-    //     });
-    
+    $("#rsvp-yes").on("click", function(e) {
+        $("input[name='Attending']").val("yes");
+    })
+    $("#rsvp-no").on("click", function (e) {
+        $("input[name='Attending']").val("no");
+        $("#guests-select").prop("required", false)
+    })
     console.log("ready!");
 });
 
@@ -111,7 +104,16 @@ $('#rsvp-form').on('submit', function(e) {
     dataType: "json",
     data: $form.serializeObject()
   }).success(function(data) {
-      $("#thankyou").toggle("fade")
+      $attending = $("input[name='Attending']").val();
+      console.log("$attending", $attending)
+      if($attending == "yes") {
+          $("#thankyou").toggle("fade")
+          $("#nope").hide();
+      }
+      else {
+          $("#nope").show();
+          $("#thankyou").hide();
+      }
       $("#form-block").hide();
       $("#rsvp-caption").hide();
   }

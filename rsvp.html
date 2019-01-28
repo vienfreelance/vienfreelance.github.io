@@ -219,18 +219,19 @@ collection-layout-default homepage mobile-style-available site-title">
                                                     class="required">*</span></label>
                                             </p>
                                             
-                                            <div class="field first-name">
+                                            <div class="field">
                                                 <p class="radio-options">
                                                     <label class="caption">
-                                                        <input name="Attending" type="radio" value="yes" checked />
+                                                        <input name="Attending" type="radio" value="yes" id="rsvp-yes"/>
                                                         <span>Yes, I will attend</span>
                                                     </label>
                                                 </p>
+                                                
                                             </div>
-                                            <div class="field last-name">
+                                            <div class="field">
                                                 <p class="radio-options">
                                                     <label class="caption">
-                                                        <input name="attending" type="radio" value="no"/>
+                                                        <input name="Attending" type="radio" value="no" id="rsvp-no" />
                                                         <span>No, I must regretfully decline</span>
                                                     </label>
                                                 </p>
@@ -423,6 +424,15 @@ collection-layout-default homepage mobile-style-available site-title">
                                 <div class="sqs-block-content">
                                     <h2 class="text-align-center">
                                         See you there!
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="nope" style="display: none;">
+                            <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1407273714484_50873">
+                                <div class="sqs-block-content">
+                                    <h2 class="text-align-center">
+                                        We'll miss you!
                                     </h2>
                                 </div>
                             </div>
