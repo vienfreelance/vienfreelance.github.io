@@ -146,7 +146,7 @@ collection-layout-default homepage mobile-style-available site-title">
             <!-- // CATEGORY NAV -->
 
             <div class="sqs-layout sqs-grid-12 columns-12">
-                <!-- <div class="row sqs-row">
+                <div class="row sqs-row">
                     <div class="col sqs-col-12 span-12">
                         <div class="sqs-block image-block sqs-block-image" data-block-type="5">
                             <div class="sqs-block-content">
@@ -156,7 +156,7 @@ collection-layout-default homepage mobile-style-available site-title">
                                     <div class="intrinsic" style="max-width:100%;">
 
                                         <div style="padding-bottom:56.19999694824219%;" class="image-block-wrapper has-aspect-ratio">
-                                            <img src="assets/home.jpg" alt="home.jpg" />
+                                            <img src="assets/wedding.jpg" alt="wedding.jpg" />
                                         </div>
 
                                     </div>
@@ -168,7 +168,7 @@ collection-layout-default homepage mobile-style-available site-title">
                             <div class="sqs-block-content">&nbsp;</div>
                         </div>
                     </div>
-                </div> -->
+                </div>
                 <div class="row sqs-row">
                     <div class="col sqs-col-2 span-2">
                         <div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-yui_3_17_2_1_1406913102698_275859">
@@ -178,7 +178,8 @@ collection-layout-default homepage mobile-style-available site-title">
                     <div class="col sqs-col-8 span-8">
                         <div class="sqs-block html-block sqs-block-html" data-block-type="2">
                             <div class="sqs-block-content">
-                                <h3 class="text-align-center">We look forward to celebrating with you!</h3>
+                                <h3 class="text-align-center" id="forward-text">We look forward to celebrating with you!</h3>
+                                <h3 class="text-align-center" id="nope" style="display: none;">We'll miss you!</h3>
                                 <h3 class="text-align-center" id="rsvp-caption">Please RSVP by March 11th, 2019</h3>
                             </div>
                         </div>
@@ -239,7 +240,7 @@ collection-layout-default homepage mobile-style-available site-title">
                                             
                                         </div>
                                         <!-- food choices  -->
-                                        <div class="form-item field text required">
+                                        <div class="form-item field text required" id="food-selection">
                                             <p class="radio-title">
                                                 <label class="title">Please indicate your entree selection: <span class="required">*</span></label>
                                             </p>
@@ -258,7 +259,7 @@ collection-layout-default homepage mobile-style-available site-title">
                                             </p>
                                             <p class="radio-options">
                                                 <label class="caption">
-                                                    <input class="field-control" name="Entree" type="radio" value="Vegetarian" checked />
+                                                    <input class="field-control" name="Entree" type="radio" value="Vegetarian"/>
                                                     <span>Vegetarian</span>
                                                 </label>
                                             </p>
@@ -270,7 +271,7 @@ collection-layout-default homepage mobile-style-available site-title">
                                             </p>
                                         </div>
                                         <!-- allergies  -->
-                                        <div class="form-item field text">
+                                        <div class="form-item field text" id="diet-restriction">
                                             <label class="title" for="textarea-yui_3_17_2_1_1406913102698_182929-field">Please note any special dietary
                                                 requirements:</label>
 
@@ -278,7 +279,7 @@ collection-layout-default homepage mobile-style-available site-title">
                                         </div>
                                         
                                         <!-- + 1 -->
-                                        <div class="form-item field text required">
+                                        <div class="form-item field text required" id="guest-selection">
                                             <label class="title" for="text-yui_3_17_2_1_1406913102698_182522-field">How many other guests are accompanying you?</label>
                                             <select class="field-element text" id="guests-select" style="font-family: Montserrat; height: 40px;" required>
                                                 <option value="">--Please choose an option--</option>
@@ -428,15 +429,7 @@ collection-layout-default homepage mobile-style-available site-title">
                                 </div>
                             </div>
                         </div>
-                        <div id="nope" style="display: none;">
-                            <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1407273714484_50873">
-                                <div class="sqs-block-content">
-                                    <h2 class="text-align-center">
-                                        We'll miss you!
-                                    </h2>
-                                </div>
-                            </div>
-                        </div>
+                        
                         <div class="sqs-block spacer-block sqs-block-spacer" data-aspect-ratio="5.057471264367816"
                             data-block-type="21" id="block-yui_3_17_2_1_1407273714484_50771">
                             <div class="sqs-block-content">&nbsp;</div>

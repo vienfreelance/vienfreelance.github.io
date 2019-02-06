@@ -4,10 +4,17 @@ $(document).ready(function () {
     $lastName = $("input[name=Last_Name]");
     $("#rsvp-yes").on("click", function(e) {
         $("input[name='Attending']").val("yes");
+        $("#guest-selection").fadeIn();
+        $("#food-selection").fadeIn();
+        $("#diet-restriction").fadeIn();
     })
     $("#rsvp-no").on("click", function (e) {
         $("input[name='Attending']").val("no");
         $("#guests-select").prop("required", false)
+        $("#guest-selection").fadeOut();
+        $("#food-selection").fadeOut();
+        $("#diet-restriction").fadeOut();
+
     })
     console.log("ready!");
 });
@@ -113,6 +120,7 @@ $('#rsvp-form').on('submit', function(e) {
       else {
           $("#nope").show();
           $("#thankyou").hide();
+          $("#forward-text").hide();
       }
       $("#form-block").hide();
       $("#rsvp-caption").hide();
